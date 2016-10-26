@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5218367D8C398D3750E0598 /* libPods-BWiOSAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */; };
+		B48102F31DC09A1400BE0E17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F21DC09A1400BE0E17 /* main.m */; };
+		B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F51DC09A1400BE0E17 /* AppDelegate.m */; };
+		B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48102FD1DC09A1400BE0E17 /* Assets.xcassets */; };
+		B48103011DC09A1400BE0E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48102FF1DC09A1400BE0E17 /* LaunchScreen.storyboard */; };
+		B481030C1DC09A1500BE0E17 /* BWiOSAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B481030B1DC09A1500BE0E17 /* BWiOSAnimationTests.m */; };
+		B48103171DC09A1500BE0E17 /* BWiOSAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B48103161DC09A1500BE0E17 /* BWiOSAnimationUITests.m */; };
+		B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */; };
+		B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */; };
+		B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B81DC0A3DF00296F80 /* BWTranslationViewController.m */; };
+		B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6BB1DC0A3E600296F80 /* BWRotationViewController.m */; };
+		B4E7A6BF1DC0A3ED00296F80 /* BWZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6BE1DC0A3ED00296F80 /* BWZoomViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B48103081DC09A1500BE0E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B48102E61DC09A1400BE0E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B48102ED1DC09A1400BE0E17;
+			remoteInfo = BWiOSAnimation;
+		};
+		B48103131DC09A1500BE0E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B48102E61DC09A1400BE0E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B48102ED1DC09A1400BE0E17;
+			remoteInfo = BWiOSAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BWiOSAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48102EE1DC09A1400BE0E17 /* BWiOSAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWiOSAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48102F21DC09A1400BE0E17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B48102F41DC09A1400BE0E17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B48102F51DC09A1400BE0E17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B48102FD1DC09A1400BE0E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B48103001DC09A1400BE0E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B48103021DC09A1400BE0E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48103071DC09A1500BE0E17 /* BWiOSAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWiOSAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B481030B1DC09A1500BE0E17 /* BWiOSAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWiOSAnimationTests.m; sourceTree = "<group>"; };
+		B481030D1DC09A1500BE0E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48103121DC09A1500BE0E17 /* BWiOSAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWiOSAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48103161DC09A1500BE0E17 /* BWiOSAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWiOSAnimationUITests.m; sourceTree = "<group>"; };
+		B48103181DC09A1500BE0E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B481032A1DC09F3100BE0E17 /* BWiOSAnimation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWiOSAnimation.pch; sourceTree = "<group>"; };
+		B481032B1DC0A31500BE0E17 /* BWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBaseViewController.h; sourceTree = "<group>"; };
+		B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseViewController.m; sourceTree = "<group>"; };
+		B4E7A6B41DC0A3CD00296F80 /* BWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWHomeViewController.h; sourceTree = "<group>"; };
+		B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWHomeViewController.m; sourceTree = "<group>"; };
+		B4E7A6B71DC0A3DF00296F80 /* BWTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTranslationViewController.h; sourceTree = "<group>"; };
+		B4E7A6B81DC0A3DF00296F80 /* BWTranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTranslationViewController.m; sourceTree = "<group>"; };
+		B4E7A6BA1DC0A3E600296F80 /* BWRotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWRotationViewController.h; sourceTree = "<group>"; };
+		B4E7A6BB1DC0A3E600296F80 /* BWRotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWRotationViewController.m; sourceTree = "<group>"; };
+		B4E7A6BD1DC0A3ED00296F80 /* BWZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWZoomViewController.h; sourceTree = "<group>"; };
+		B4E7A6BE1DC0A3ED00296F80 /* BWZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWZoomViewController.m; sourceTree = "<group>"; };
+		CFD7D734CB54793F25BC35EF /* Pods-BWiOSAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BWiOSAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BWiOSAnimation/Pods-BWiOSAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		F5150F03BFFA45DF5589E14E /* Pods-BWiOSAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BWiOSAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BWiOSAnimation/Pods-BWiOSAnimation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B48102EB1DC09A1400BE0E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5218367D8C398D3750E0598 /* libPods-BWiOSAnimation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48103041DC09A1500BE0E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B481030F1DC09A1500BE0E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B865E0AD858F8F04875A34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85612DB041EA93B2D3C76170 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFD7D734CB54793F25BC35EF /* Pods-BWiOSAnimation.debug.xcconfig */,
+				F5150F03BFFA45DF5589E14E /* Pods-BWiOSAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B48102E51DC09A1400BE0E17 = {
+			isa = PBXGroup;
+			children = (
+				B48102F01DC09A1400BE0E17 /* BWiOSAnimation */,
+				B481030A1DC09A1500BE0E17 /* BWiOSAnimationTests */,
+				B48103151DC09A1500BE0E17 /* BWiOSAnimationUITests */,
+				B48102EF1DC09A1400BE0E17 /* Products */,
+				85612DB041EA93B2D3C76170 /* Pods */,
+				13B865E0AD858F8F04875A34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B48102EF1DC09A1400BE0E17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B48102EE1DC09A1400BE0E17 /* BWiOSAnimation.app */,
+				B48103071DC09A1500BE0E17 /* BWiOSAnimationTests.xctest */,
+				B48103121DC09A1500BE0E17 /* BWiOSAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B48102F01DC09A1400BE0E17 /* BWiOSAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B48102F41DC09A1400BE0E17 /* AppDelegate.h */,
+				B48102F51DC09A1400BE0E17 /* AppDelegate.m */,
+				B48103241DC09B7200BE0E17 /* MVC */,
+				B48102FD1DC09A1400BE0E17 /* Assets.xcassets */,
+				B48102F11DC09A1400BE0E17 /* Supporting Files */,
+			);
+			path = BWiOSAnimation;
+			sourceTree = "<group>";
+		};
+		B48102F11DC09A1400BE0E17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B48102F21DC09A1400BE0E17 /* main.m */,
+				B48103021DC09A1400BE0E17 /* Info.plist */,
+				B48102FF1DC09A1400BE0E17 /* LaunchScreen.storyboard */,
+				B481032A1DC09F3100BE0E17 /* BWiOSAnimation.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B481030A1DC09A1500BE0E17 /* BWiOSAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B481030B1DC09A1500BE0E17 /* BWiOSAnimationTests.m */,
+				B481030D1DC09A1500BE0E17 /* Info.plist */,
+			);
+			path = BWiOSAnimationTests;
+			sourceTree = "<group>";
+		};
+		B48103151DC09A1500BE0E17 /* BWiOSAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B48103161DC09A1500BE0E17 /* BWiOSAnimationUITests.m */,
+				B48103181DC09A1500BE0E17 /* Info.plist */,
+			);
+			path = BWiOSAnimationUITests;
+			sourceTree = "<group>";
+		};
+		B48103241DC09B7200BE0E17 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B48103251DC09B7200BE0E17 /* BaseController */,
+				B48103261DC09B7200BE0E17 /* Home */,
+				B48103281DC09B7200BE0E17 /* Translation */,
+				B48103271DC09B7200BE0E17 /* Rotation */,
+				B48103291DC09B7200BE0E17 /* Zoom */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		B48103251DC09B7200BE0E17 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				B481032B1DC0A31500BE0E17 /* BWBaseViewController.h */,
+				B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		B48103261DC09B7200BE0E17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7A6B41DC0A3CD00296F80 /* BWHomeViewController.h */,
+				B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B48103271DC09B7200BE0E17 /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7A6BA1DC0A3E600296F80 /* BWRotationViewController.h */,
+				B4E7A6BB1DC0A3E600296F80 /* BWRotationViewController.m */,
+			);
+			path = Rotation;
+			sourceTree = "<group>";
+		};
+		B48103281DC09B7200BE0E17 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7A6B71DC0A3DF00296F80 /* BWTranslationViewController.h */,
+				B4E7A6B81DC0A3DF00296F80 /* BWTranslationViewController.m */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		B48103291DC09B7200BE0E17 /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7A6BD1DC0A3ED00296F80 /* BWZoomViewController.h */,
+				B4E7A6BE1DC0A3ED00296F80 /* BWZoomViewController.m */,
+			);
+			path = Zoom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B48102ED1DC09A1400BE0E17 /* BWiOSAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B481031B1DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimation" */;
+			buildPhases = (
+				9D1461CE4B11911C32CA77FC /* [CP] Check Pods Manifest.lock */,
+				B48102EA1DC09A1400BE0E17 /* Sources */,
+				B48102EB1DC09A1400BE0E17 /* Frameworks */,
+				B48102EC1DC09A1400BE0E17 /* Resources */,
+				0168900ADFF9A5B380C4CF8C /* [CP] Embed Pods Frameworks */,
+				BCAF4766BD2C94D186058493 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BWiOSAnimation;
+			productName = BWiOSAnimation;
+			productReference = B48102EE1DC09A1400BE0E17 /* BWiOSAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B48103061DC09A1500BE0E17 /* BWiOSAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B481031E1DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimationTests" */;
+			buildPhases = (
+				B48103031DC09A1500BE0E17 /* Sources */,
+				B48103041DC09A1500BE0E17 /* Frameworks */,
+				B48103051DC09A1500BE0E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B48103091DC09A1500BE0E17 /* PBXTargetDependency */,
+			);
+			name = BWiOSAnimationTests;
+			productName = BWiOSAnimationTests;
+			productReference = B48103071DC09A1500BE0E17 /* BWiOSAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B48103111DC09A1500BE0E17 /* BWiOSAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48103211DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimationUITests" */;
+			buildPhases = (
+				B481030E1DC09A1500BE0E17 /* Sources */,
+				B481030F1DC09A1500BE0E17 /* Frameworks */,
+				B48103101DC09A1500BE0E17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B48103141DC09A1500BE0E17 /* PBXTargetDependency */,
+			);
+			name = BWiOSAnimationUITests;
+			productName = BWiOSAnimationUITests;
+			productReference = B48103121DC09A1500BE0E17 /* BWiOSAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B48102E61DC09A1400BE0E17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = BobWongStudio;
+				TargetAttributes = {
+					B48102ED1DC09A1400BE0E17 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B48103061DC09A1500BE0E17 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B48102ED1DC09A1400BE0E17;
+					};
+					B48103111DC09A1500BE0E17 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B48102ED1DC09A1400BE0E17;
+					};
+				};
+			};
+			buildConfigurationList = B48102E91DC09A1400BE0E17 /* Build configuration list for PBXProject "BWiOSAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B48102E51DC09A1400BE0E17;
+			productRefGroup = B48102EF1DC09A1400BE0E17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B48102ED1DC09A1400BE0E17 /* BWiOSAnimation */,
+				B48103061DC09A1500BE0E17 /* BWiOSAnimationTests */,
+				B48103111DC09A1500BE0E17 /* BWiOSAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B48102EC1DC09A1400BE0E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48103011DC09A1400BE0E17 /* LaunchScreen.storyboard in Resources */,
+				B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48103051DC09A1500BE0E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48103101DC09A1500BE0E17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0168900ADFF9A5B380C4CF8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BWiOSAnimation/Pods-BWiOSAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1461CE4B11911C32CA77FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAF4766BD2C94D186058493 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BWiOSAnimation/Pods-BWiOSAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B48102EA1DC09A1400BE0E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */,
+				B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */,
+				B48102F31DC09A1400BE0E17 /* main.m in Sources */,
+				B4E7A6BF1DC0A3ED00296F80 /* BWZoomViewController.m in Sources */,
+				B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */,
+				B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */,
+				B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48103031DC09A1500BE0E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B481030C1DC09A1500BE0E17 /* BWiOSAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B481030E1DC09A1500BE0E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48103171DC09A1500BE0E17 /* BWiOSAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B48103091DC09A1500BE0E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B48102ED1DC09A1400BE0E17 /* BWiOSAnimation */;
+			targetProxy = B48103081DC09A1500BE0E17 /* PBXContainerItemProxy */;
+		};
+		B48103141DC09A1500BE0E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B48102ED1DC09A1400BE0E17 /* BWiOSAnimation */;
+			targetProxy = B48103131DC09A1500BE0E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B48102FF1DC09A1400BE0E17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48103001DC09A1400BE0E17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B48103191DC09A1500BE0E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B481031A1DC09A1500BE0E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B481031C1DC09A1500BE0E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD7D734CB54793F25BC35EF /* Pods-BWiOSAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = BWiOSAnimation/BWiOSAnimation.pch;
+				INFOPLIST_FILE = BWiOSAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B481031D1DC09A1500BE0E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5150F03BFFA45DF5589E14E /* Pods-BWiOSAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = BWiOSAnimation/BWiOSAnimation.pch;
+				INFOPLIST_FILE = BWiOSAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B481031F1DC09A1500BE0E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BWiOSAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWiOSAnimation.app/BWiOSAnimation";
+			};
+			name = Debug;
+		};
+		B48103201DC09A1500BE0E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BWiOSAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWiOSAnimation.app/BWiOSAnimation";
+			};
+			name = Release;
+		};
+		B48103221DC09A1500BE0E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BWiOSAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BWiOSAnimation;
+			};
+			name = Debug;
+		};
+		B48103231DC09A1500BE0E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BWiOSAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BWiOSAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B48102E91DC09A1400BE0E17 /* Build configuration list for PBXProject "BWiOSAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48103191DC09A1500BE0E17 /* Debug */,
+				B481031A1DC09A1500BE0E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B481031B1DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B481031C1DC09A1500BE0E17 /* Debug */,
+				B481031D1DC09A1500BE0E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B481031E1DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B481031F1DC09A1500BE0E17 /* Debug */,
+				B48103201DC09A1500BE0E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48103211DC09A1500BE0E17 /* Build configuration list for PBXNativeTarget "BWiOSAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48103221DC09A1500BE0E17 /* Debug */,
+				B48103231DC09A1500BE0E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B48102E61DC09A1400BE0E17 /* Project object */;
+}
