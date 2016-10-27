@@ -37,6 +37,7 @@
     [self.view addSubview:viewFrame];
     
     UIView *viewConstraints = [[UIView alloc] init];
+    self.viewConstraints = viewConstraints;
     viewConstraints.backgroundColor = [UIColor blueColor];
     [self.view addSubview:viewConstraints];
     [viewConstraints mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,7 +62,18 @@
 
 - (void)buttonConstraintsTranslationAct:(UIButton *)sender
 {
+    CGRect frame = _viewConstraints.frame;
+    CGFloat y_constraints = (frame.origin.y == Y_ORIGINAL) ? Y_MAX : Y_ORIGINAL;
     
+    BW_WEAK_SELF;
+    [UIView animateWithDuration:3.0 animations:^{
+        BW_STRONG_SELF;
+        [strongSelf.viewConstraints mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(y_constraints);
+        }];
+        
+        [self.view layoutSubviews];
+    }];
 }
 
 @end
