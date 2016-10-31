@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5218367D8C398D3750E0598 /* libPods-BWiOSAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */; };
+		B473823F1DC747600020A308 /* BWStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B473823E1DC747600020A308 /* BWStretchViewController.m */; };
 		B48102F31DC09A1400BE0E17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F21DC09A1400BE0E17 /* main.m */; };
 		B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F51DC09A1400BE0E17 /* AppDelegate.m */; };
 		B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48102FD1DC09A1400BE0E17 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BWiOSAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B473823D1DC747600020A308 /* BWStretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWStretchViewController.h; sourceTree = "<group>"; };
+		B473823E1DC747600020A308 /* BWStretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWStretchViewController.m; sourceTree = "<group>"; };
 		B48102EE1DC09A1400BE0E17 /* BWiOSAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWiOSAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48102F21DC09A1400BE0E17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B48102F41DC09A1400BE0E17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 				F5150F03BFFA45DF5589E14E /* Pods-BWiOSAnimation.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B473823C1DC7474D0020A308 /* Stretch */ = {
+			isa = PBXGroup;
+			children = (
+				B473823D1DC747600020A308 /* BWStretchViewController.h */,
+				B473823E1DC747600020A308 /* BWStretchViewController.m */,
+			);
+			path = Stretch;
 			sourceTree = "<group>";
 		};
 		B48102E51DC09A1400BE0E17 = {
@@ -182,6 +194,7 @@
 				B48103281DC09B7200BE0E17 /* Translation */,
 				B48103271DC09B7200BE0E17 /* Rotation */,
 				B48103291DC09B7200BE0E17 /* Zoom */,
+				B473823C1DC7474D0020A308 /* Stretch */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */,
+				B473823F1DC747600020A308 /* BWStretchViewController.m in Sources */,
 				B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */,
 				B48102F31DC09A1400BE0E17 /* main.m in Sources */,
 				B4E7A6BF1DC0A3ED00296F80 /* BWZoomViewController.m in Sources */,
