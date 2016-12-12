@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A5218367D8C398D3750E0598 /* libPods-BWiOSAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */; };
 		B473823F1DC747600020A308 /* BWStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B473823E1DC747600020A308 /* BWStretchViewController.m */; };
+		B47382421DC88A0A0020A308 /* btn_more_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47382411DC88A0A0020A308 /* btn_more_down@2x.png */; };
 		B48102F31DC09A1400BE0E17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F21DC09A1400BE0E17 /* main.m */; };
 		B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48102F51DC09A1400BE0E17 /* AppDelegate.m */; };
 		B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48102FD1DC09A1400BE0E17 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BWiOSAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B473823D1DC747600020A308 /* BWStretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWStretchViewController.h; sourceTree = "<group>"; };
 		B473823E1DC747600020A308 /* BWStretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWStretchViewController.m; sourceTree = "<group>"; };
+		B47382411DC88A0A0020A308 /* btn_more_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_more_down@2x.png"; sourceTree = "<group>"; };
 		B48102EE1DC09A1400BE0E17 /* BWiOSAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWiOSAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48102F21DC09A1400BE0E17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B48102F41DC09A1400BE0E17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = Stretch;
 			sourceTree = "<group>";
 		};
+		B47382401DC88A0A0020A308 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B47382411DC88A0A0020A308 /* btn_more_down@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B48102E51DC09A1400BE0E17 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 				B48102F41DC09A1400BE0E17 /* AppDelegate.h */,
 				B48102F51DC09A1400BE0E17 /* AppDelegate.m */,
 				B48103241DC09B7200BE0E17 /* MVC */,
+				B47382401DC88A0A0020A308 /* Resource */,
 				B48102FD1DC09A1400BE0E17 /* Assets.xcassets */,
 				B48102F11DC09A1400BE0E17 /* Supporting Files */,
 			);
@@ -352,6 +363,7 @@
 			files = (
 				B48103011DC09A1400BE0E17 /* LaunchScreen.storyboard in Resources */,
 				B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */,
+				B47382421DC88A0A0020A308 /* btn_more_down@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "BWTranslationViewController.h"
 #import "BWRotationViewController.h"
 #import "BWZoomViewController.h"
+#import "BWStretchViewController.h"
 
 #define bw_NSStringFromClass(Class) NSStringFromClass([Class class])
 
@@ -27,7 +28,8 @@
     self.title = @"Home";
     _dataSource = @[bw_NSStringFromClass(BWTranslationViewController),
                     bw_NSStringFromClass(BWRotationViewController),
-                    bw_NSStringFromClass(BWZoomViewController)
+                    bw_NSStringFromClass(BWZoomViewController),
+                    bw_NSStringFromClass(BWStretchViewController)
                     ];
     
     [self setUI];
