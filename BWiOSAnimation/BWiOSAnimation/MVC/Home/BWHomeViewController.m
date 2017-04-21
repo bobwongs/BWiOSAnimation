@@ -11,6 +11,7 @@
 #import "BWRotationViewController.h"
 #import "BWZoomViewController.h"
 #import "BWStretchViewController.h"
+#import "BWResearchViewController.h"
 
 #define bw_NSStringFromClass(Class) NSStringFromClass([Class class])
 
@@ -29,7 +30,8 @@
     _dataSource = @[bw_NSStringFromClass(BWTranslationViewController),
                     bw_NSStringFromClass(BWRotationViewController),
                     bw_NSStringFromClass(BWZoomViewController),
-                    bw_NSStringFromClass(BWStretchViewController)
+                    bw_NSStringFromClass(BWStretchViewController),
+                    bw_NSStringFromClass(BWResearchViewController)
                     ];
     
     [self setUI];

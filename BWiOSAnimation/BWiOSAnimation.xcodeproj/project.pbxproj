@@ -17,6 +17,8 @@
 		B481030C1DC09A1500BE0E17 /* BWiOSAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B481030B1DC09A1500BE0E17 /* BWiOSAnimationTests.m */; };
 		B48103171DC09A1500BE0E17 /* BWiOSAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B48103161DC09A1500BE0E17 /* BWiOSAnimationUITests.m */; };
 		B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */; };
+		B48C474F1EA5CB6A00BE1F2D /* BWResearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */; };
+		B48C47501EA5CB6A00BE1F2D /* BWResearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */; };
 		B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */; };
 		B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B81DC0A3DF00296F80 /* BWTranslationViewController.m */; };
 		B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6BB1DC0A3E600296F80 /* BWRotationViewController.m */; };
@@ -61,6 +63,9 @@
 		B481032A1DC09F3100BE0E17 /* BWiOSAnimation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWiOSAnimation.pch; sourceTree = "<group>"; };
 		B481032B1DC0A31500BE0E17 /* BWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBaseViewController.h; sourceTree = "<group>"; };
 		B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseViewController.m; sourceTree = "<group>"; };
+		B48C474C1EA5CB6A00BE1F2D /* BWResearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWResearchViewController.h; sourceTree = "<group>"; };
+		B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWResearchViewController.m; sourceTree = "<group>"; };
+		B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWResearchViewController.xib; sourceTree = "<group>"; };
 		B4E7A6B41DC0A3CD00296F80 /* BWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWHomeViewController.h; sourceTree = "<group>"; };
 		B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWHomeViewController.m; sourceTree = "<group>"; };
 		B4E7A6B71DC0A3DF00296F80 /* BWTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTranslationViewController.h; sourceTree = "<group>"; };
@@ -206,6 +211,7 @@
 				B48103271DC09B7200BE0E17 /* Rotation */,
 				B48103291DC09B7200BE0E17 /* Zoom */,
 				B473823C1DC7474D0020A308 /* Stretch */,
+				B48C47461EA59D5000BE1F2D /* Research */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -253,6 +259,32 @@
 				B4E7A6BE1DC0A3ED00296F80 /* BWZoomViewController.m */,
 			);
 			path = Zoom;
+			sourceTree = "<group>";
+		};
+		B48C47461EA59D5000BE1F2D /* Research */ = {
+			isa = PBXGroup;
+			children = (
+				B48C47471EA59D5000BE1F2D /* Controller */,
+				B48C47481EA59D5000BE1F2D /* View */,
+			);
+			path = Research;
+			sourceTree = "<group>";
+		};
+		B48C47471EA59D5000BE1F2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B48C474C1EA5CB6A00BE1F2D /* BWResearchViewController.h */,
+				B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */,
+				B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B48C47481EA59D5000BE1F2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +395,7 @@
 			files = (
 				B48103011DC09A1400BE0E17 /* LaunchScreen.storyboard in Resources */,
 				B48102FE1DC09A1400BE0E17 /* Assets.xcassets in Resources */,
+				B48C47501EA5CB6A00BE1F2D /* BWResearchViewController.xib in Resources */,
 				B47382421DC88A0A0020A308 /* btn_more_down@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCAF4766BD2C94D186058493 /* [CP] Copy Pods Resources */ = {
@@ -444,6 +477,7 @@
 				B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */,
 				B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */,
 				B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */,
+				B48C474F1EA5CB6A00BE1F2D /* BWResearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

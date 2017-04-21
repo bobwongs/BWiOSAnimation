@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BWResearchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view0" destination="ZOU-Hi-9D3" id="Iqb-wi-l2I"/>
+                <outlet property="view1" destination="8tf-1m-6un" id="eln-bE-MeW"/>
+                <outlet property="view2" destination="s04-jA-hkI" id="mkK-M6-Ae1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tf-1m-6un">
+                    <rect key="frame" x="219" y="28" width="85" height="73"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="73" id="4He-aB-umz"/>
+                        <constraint firstAttribute="width" constant="85" id="uKq-be-QJH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxn-RZ-C81">
+                    <rect key="frame" x="64" y="354" width="193" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="miw-dZ-C5C"/>
+                    </constraints>
+                    <state key="normal" title="Animate in block"/>
+                    <connections>
+                        <action selector="animateInBlockAction:" destination="-1" eventType="touchUpInside" id="rNx-JX-NbK"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-Hi-9D3">
+                    <rect key="frame" x="16" y="28" width="85" height="73"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="CIZ-UD-rJW"/>
+                        <constraint firstAttribute="height" constant="73" id="SFU-eq-lFw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbl-9N-HaR">
+                    <rect key="frame" x="40" y="412" width="240" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Using the Begin/Commit Methods"/>
+                    <connections>
+                        <action selector="animateUsingBeginOrCommitMethodsAction:" destination="-1" eventType="touchUpInside" id="QLU-Y5-4Zx"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s04-jA-hkI">
+                    <rect key="frame" x="16" y="142" width="85" height="85"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="ALF-SZ-326"/>
+                        <constraint firstAttribute="height" constant="85" id="bWt-yS-3zO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s04-jA-hkI" firstAttribute="leading" secondItem="ZOU-Hi-9D3" secondAttribute="leading" id="0Ak-bC-FUB"/>
+                <constraint firstItem="Sxn-RZ-C81" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="2Ns-Ra-QgL"/>
+                <constraint firstItem="cbl-9N-HaR" firstAttribute="top" secondItem="Sxn-RZ-C81" secondAttribute="bottom" constant="9" id="2oI-ho-hU7"/>
+                <constraint firstItem="8tf-1m-6un" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="5zI-Pe-bl5"/>
+                <constraint firstItem="ZOU-Hi-9D3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="80H-Of-I0b"/>
+                <constraint firstItem="Sxn-RZ-C81" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8AA-kB-Gtl"/>
+                <constraint firstItem="ZOU-Hi-9D3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="AmL-i5-Jmv"/>
+                <constraint firstItem="cbl-9N-HaR" firstAttribute="leading" secondItem="Sxn-RZ-C81" secondAttribute="leading" constant="-24" id="CuA-MC-9NB"/>
+                <constraint firstAttribute="trailing" secondItem="8tf-1m-6un" secondAttribute="trailing" constant="16" id="KdU-Cl-ABZ"/>
+                <constraint firstAttribute="bottom" secondItem="Sxn-RZ-C81" secondAttribute="bottom" constant="77" id="aHP-h6-yJ1"/>
+                <constraint firstAttribute="trailing" secondItem="Sxn-RZ-C81" secondAttribute="trailing" constant="63" id="fQo-m9-v81"/>
+                <constraint firstItem="cbl-9N-HaR" firstAttribute="trailing" secondItem="Sxn-RZ-C81" secondAttribute="trailing" constant="23" id="jBQ-5k-kUf"/>
+                <constraint firstItem="s04-jA-hkI" firstAttribute="trailing" secondItem="ZOU-Hi-9D3" secondAttribute="trailing" id="lF7-SU-kb5"/>
+                <constraint firstItem="s04-jA-hkI" firstAttribute="top" secondItem="ZOU-Hi-9D3" secondAttribute="bottom" constant="41" id="ljc-aA-lxN"/>
+                <constraint firstAttribute="bottom" secondItem="cbl-9N-HaR" secondAttribute="bottom" constant="19" id="udh-68-qNq"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
