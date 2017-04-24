@@ -12,6 +12,7 @@
 #import "BWZoomViewController.h"
 #import "BWStretchViewController.h"
 #import "BWResearchViewController.h"
+#import "BWResearch2ViewController.h"
 
 #define bw_NSStringFromClass(Class) NSStringFromClass([Class class])
 
@@ -31,8 +32,8 @@
                     bw_NSStringFromClass(BWRotationViewController),
                     bw_NSStringFromClass(BWZoomViewController),
                     bw_NSStringFromClass(BWStretchViewController),
-                    bw_NSStringFromClass(BWResearchViewController)
-                    ];
+                    bw_NSStringFromClass(BWResearchViewController),
+                    bw_NSStringFromClass(BWResearch2ViewController)];
     
     [self setUI];
 }

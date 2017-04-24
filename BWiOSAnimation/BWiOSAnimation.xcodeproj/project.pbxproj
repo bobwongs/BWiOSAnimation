@@ -19,6 +19,11 @@
 		B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B481032C1DC0A31500BE0E17 /* BWBaseViewController.m */; };
 		B48C474F1EA5CB6A00BE1F2D /* BWResearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */; };
 		B48C47501EA5CB6A00BE1F2D /* BWResearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */; };
+		B49BD9351EADA1870069FAE2 /* BWResearch2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BD9341EADA1870069FAE2 /* BWResearch2ViewController.m */; };
+		B49BD93B1EADA6940069FAE2 /* BWCustomCAView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BD93A1EADA6940069FAE2 /* BWCustomCAView.m */; };
+		B49BD9401EADAA620069FAE2 /* BWCustomCAView0.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BD93F1EADAA620069FAE2 /* BWCustomCAView0.m */; };
+		B49BD9441EADACC70069FAE2 /* BWCustomCALayer0.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BD9431EADACC70069FAE2 /* BWCustomCALayer0.m */; };
+		B49BD9471EADB4FF0069FAE2 /* BWCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49BD9461EADB4FF0069FAE2 /* BWCoreAnimationViewController.m */; };
 		B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */; };
 		B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6B81DC0A3DF00296F80 /* BWTranslationViewController.m */; };
 		B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7A6BB1DC0A3E600296F80 /* BWRotationViewController.m */; };
@@ -66,6 +71,17 @@
 		B48C474C1EA5CB6A00BE1F2D /* BWResearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWResearchViewController.h; sourceTree = "<group>"; };
 		B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWResearchViewController.m; sourceTree = "<group>"; };
 		B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWResearchViewController.xib; sourceTree = "<group>"; };
+		B49BD9331EADA1870069FAE2 /* BWResearch2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWResearch2ViewController.h; sourceTree = "<group>"; };
+		B49BD9341EADA1870069FAE2 /* BWResearch2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWResearch2ViewController.m; sourceTree = "<group>"; };
+		B49BD9391EADA6940069FAE2 /* BWCustomCAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWCustomCAView.h; sourceTree = "<group>"; };
+		B49BD93A1EADA6940069FAE2 /* BWCustomCAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWCustomCAView.m; sourceTree = "<group>"; };
+		B49BD93C1EADA6CB0069FAE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B49BD93E1EADAA620069FAE2 /* BWCustomCAView0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWCustomCAView0.h; sourceTree = "<group>"; };
+		B49BD93F1EADAA620069FAE2 /* BWCustomCAView0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWCustomCAView0.m; sourceTree = "<group>"; };
+		B49BD9421EADACC70069FAE2 /* BWCustomCALayer0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWCustomCALayer0.h; sourceTree = "<group>"; };
+		B49BD9431EADACC70069FAE2 /* BWCustomCALayer0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWCustomCALayer0.m; sourceTree = "<group>"; };
+		B49BD9451EADB4FF0069FAE2 /* BWCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWCoreAnimationViewController.h; sourceTree = "<group>"; };
+		B49BD9461EADB4FF0069FAE2 /* BWCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWCoreAnimationViewController.m; sourceTree = "<group>"; };
 		B4E7A6B41DC0A3CD00296F80 /* BWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWHomeViewController.h; sourceTree = "<group>"; };
 		B4E7A6B51DC0A3CD00296F80 /* BWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWHomeViewController.m; sourceTree = "<group>"; };
 		B4E7A6B71DC0A3DF00296F80 /* BWTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTranslationViewController.h; sourceTree = "<group>"; };
@@ -107,6 +123,7 @@
 		13B865E0AD858F8F04875A34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B49BD93C1EADA6CB0069FAE2 /* QuartzCore.framework */,
 				1A54E887DA8DA2BCDFEB3A54 /* libPods-BWiOSAnimation.a */,
 			);
 			name = Frameworks;
@@ -211,6 +228,7 @@
 				B48103271DC09B7200BE0E17 /* Rotation */,
 				B48103291DC09B7200BE0E17 /* Zoom */,
 				B473823C1DC7474D0020A308 /* Stretch */,
+				B49BD9361EADA6750069FAE2 /* CoreAnimation */,
 				B48C47461EA59D5000BE1F2D /* Research */,
 			);
 			path = MVC;
@@ -276,6 +294,8 @@
 				B48C474C1EA5CB6A00BE1F2D /* BWResearchViewController.h */,
 				B48C474D1EA5CB6A00BE1F2D /* BWResearchViewController.m */,
 				B48C474E1EA5CB6A00BE1F2D /* BWResearchViewController.xib */,
+				B49BD9331EADA1870069FAE2 /* BWResearch2ViewController.h */,
+				B49BD9341EADA1870069FAE2 /* BWResearch2ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +305,45 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B49BD9361EADA6750069FAE2 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B49BD9371EADA6750069FAE2 /* Controller */,
+				B49BD9381EADA6750069FAE2 /* View */,
+				B49BD9411EADACB50069FAE2 /* CALayer */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		B49BD9371EADA6750069FAE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B49BD9451EADB4FF0069FAE2 /* BWCoreAnimationViewController.h */,
+				B49BD9461EADB4FF0069FAE2 /* BWCoreAnimationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B49BD9381EADA6750069FAE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B49BD9391EADA6940069FAE2 /* BWCustomCAView.h */,
+				B49BD93A1EADA6940069FAE2 /* BWCustomCAView.m */,
+				B49BD93E1EADAA620069FAE2 /* BWCustomCAView0.h */,
+				B49BD93F1EADAA620069FAE2 /* BWCustomCAView0.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B49BD9411EADACB50069FAE2 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				B49BD9421EADACC70069FAE2 /* BWCustomCALayer0.h */,
+				B49BD9431EADACC70069FAE2 /* BWCustomCALayer0.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,15 +528,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49BD9441EADACC70069FAE2 /* BWCustomCALayer0.m in Sources */,
 				B48102F61DC09A1400BE0E17 /* AppDelegate.m in Sources */,
 				B473823F1DC747600020A308 /* BWStretchViewController.m in Sources */,
+				B49BD9471EADB4FF0069FAE2 /* BWCoreAnimationViewController.m in Sources */,
 				B4E7A6BC1DC0A3E600296F80 /* BWRotationViewController.m in Sources */,
 				B48102F31DC09A1400BE0E17 /* main.m in Sources */,
 				B4E7A6BF1DC0A3ED00296F80 /* BWZoomViewController.m in Sources */,
 				B4E7A6B61DC0A3CD00296F80 /* BWHomeViewController.m in Sources */,
 				B4E7A6B91DC0A3DF00296F80 /* BWTranslationViewController.m in Sources */,
+				B49BD9401EADAA620069FAE2 /* BWCustomCAView0.m in Sources */,
 				B481032D1DC0A31500BE0E17 /* BWBaseViewController.m in Sources */,
 				B48C474F1EA5CB6A00BE1F2D /* BWResearchViewController.m in Sources */,
+				B49BD9351EADA1870069FAE2 /* BWResearch2ViewController.m in Sources */,
+				B49BD93B1EADA6940069FAE2 /* BWCustomCAView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +677,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = BWiOSAnimation/BWiOSAnimation.pch;
 				INFOPLIST_FILE = BWiOSAnimation/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,7 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = BWiOSAnimation/BWiOSAnimation.pch;
 				INFOPLIST_FILE = BWiOSAnimation/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";

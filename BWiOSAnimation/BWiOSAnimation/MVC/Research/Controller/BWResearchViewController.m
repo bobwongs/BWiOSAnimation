@@ -22,6 +22,9 @@
     [super viewDidLoad];
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    UIView *view;
+    
 }
 
 #pragma mark - Animate in block

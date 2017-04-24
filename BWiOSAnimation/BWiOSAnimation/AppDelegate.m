@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BWHomeViewController.h"
+#import "BWResearch2ViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +21,15 @@
     BWHomeViewController *vcHome = [[BWHomeViewController alloc] init];
     UINavigationController *nvgtVCHome = [[UINavigationController alloc] initWithRootViewController:vcHome];
     
+    BWResearch2ViewController *vcResearch = [BWResearch2ViewController new];
+    UINavigationController *nvgtVCResearch = [[UINavigationController alloc] initWithRootViewController:vcResearch];
+    
+    UITabBarController *tabBar = [UITabBarController new];
+    tabBar.viewControllers = @[nvgtVCHome, nvgtVCResearch];
+    tabBar.selectedIndex = 1;
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = nvgtVCHome;
+    self.window.rootViewController = tabBar;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
