@@ -30,7 +30,8 @@
 //    [self setUI4];
 //    [self setUI5];
 //    [self setUI6];
-    [self setUI7];
+//    [self setUI7];
+    [self setUI8];
 }
 
 - (void)setUI {
@@ -151,21 +152,29 @@
     [self.view addSubview:myView2];
 }
 
+- (void)setUI8 {
+//    CATransform3D perspective = CATransform3DIdentity;
+//    perspective.m34 = -1.0/eyePosition;
+//    
+//    // Apply the transform to a parent layer.
+//    myParentLayer.sublayerTransform = perspective;
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    CATransition *transition = [CATransition animation];
-    transition.startProgress = 0;
-    transition.endProgress = 1.0;
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromRight;
-    transition.duration = 1.0;
-    
-    // Add the transition animation to both layers
-    [self.myView1.layer addAnimation:transition forKey:@"transition"];
-    [self.myView2.layer addAnimation:transition forKey:@"transition"];
-    
-    // Finally, change the visibility of the layers.
-    self.myView1.hidden = !self.myView1.hidden;
-    self.myView2.hidden = !self.myView1.hidden;
+//    CATransition *transition = [CATransition animation];
+//    transition.startProgress = 0;
+//    transition.endProgress = 1.0;
+//    transition.type = kCATransitionPush;
+//    transition.subtype = kCATransitionFromRight;
+//    transition.duration = 1.0;
+//    
+//    // Add the transition animation to both layers
+//    [self.myView1.layer addAnimation:transition forKey:@"transition"];
+//    [self.myView2.layer addAnimation:transition forKey:@"transition"];
+//    
+//    // Finally, change the visibility of the layers.
+//    self.myView1.hidden = !self.myView1.hidden;
+//    self.myView2.hidden = !self.myView1.hidden;
 }
 
 @end
