@@ -19,11 +19,11 @@
     
 //    [self animateSimpleChanges];
 //    [self usingKeyframeAnimation];
-    [self animateMultipleChangesTogether];
+//    [self animateMultipleChangesTogether];
+    [self transitionAnimationsChangesToLayerVisibility];
 }
 
 - (void)animateSimpleChanges {
-    
     // Animating Simple Changes to a Layer’s Properties
     CALayer *superLayer = self.view.layer;
     
@@ -40,7 +40,6 @@
     
     // Change the actual data value in the layer to the final value.
     layer0.opacity = 0.0;
-    
 }
 
 - (void)usingKeyframeAnimation {
@@ -99,6 +98,31 @@
     group.duration = 5.0;
     
     [layer0 addAnimation:group forKey:@"BorderChanges"];
+}
+
+- (void)transitionAnimationsChangesToLayerVisibility {
+    UIView *myView1 = [[UIView alloc] initWithFrame:CGRectMake(300, 100, 200, 200)];
+    myView1.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:myView1];
+    
+    UIView *myView2 = [[UIView alloc] initWithFrame:CGRectMake(300, 100, 200, 200)];
+    myView2.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:myView2];
+
+    CATransition *transition = [CATransition animation];
+    transition.startProgress = 0;
+    transition.endProgress = 1.0;
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    transition.duration = 1.0;
+    
+    // Add the transition animation to both layers
+    [myView1.layer addAnimation:transition forKey:@"transition"];
+    [myView2.layer addAnimation:transition forKey:@"transition"];
+    
+    // Finally, change the visibility of the layers.
+    myView1.hidden = !myView1.hidden;
+    myView2.hidden = !myView1.hidden;
 }
 
 @end

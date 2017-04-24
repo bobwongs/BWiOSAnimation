@@ -12,6 +12,9 @@
 
 @interface BWResearch2ViewController ()
 
+@property (strong, nonatomic) UIView *myView1;
+@property (strong, nonatomic) UIView *myView2;
+
 @end
 
 @implementation BWResearch2ViewController
@@ -26,7 +29,8 @@
 //    [self setUI3];
 //    [self setUI4];
 //    [self setUI5];
-    [self setUI6];
+//    [self setUI6];
+    [self setUI7];
 }
 
 - (void)setUI {
@@ -133,6 +137,35 @@
     group.duration = 5.0;
     
     [layer0 addAnimation:group forKey:@"BorderChanges"];
+}
+
+- (void)setUI7 {
+    UIView *myView1 = [[UIView alloc] initWithFrame:CGRectMake(300, 100, 200, 200)];
+    self.myView1 = myView1;
+    myView1.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:myView1];
+    
+    UIView *myView2 = [[UIView alloc] initWithFrame:CGRectMake(300, 100, 200, 200)];
+    self.myView2 = myView2;
+    myView2.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:myView2];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CATransition *transition = [CATransition animation];
+    transition.startProgress = 0;
+    transition.endProgress = 1.0;
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    transition.duration = 1.0;
+    
+    // Add the transition animation to both layers
+    [self.myView1.layer addAnimation:transition forKey:@"transition"];
+    [self.myView2.layer addAnimation:transition forKey:@"transition"];
+    
+    // Finally, change the visibility of the layers.
+    self.myView1.hidden = !self.myView1.hidden;
+    self.myView2.hidden = !self.myView1.hidden;
 }
 
 @end
